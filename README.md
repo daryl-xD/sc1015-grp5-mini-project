@@ -1,3 +1,6 @@
+# Group 5 Mini Project
+## Daryl (U2323795D), Hong Wen Bin (U2323406L)
+
 # Loan Default Prediction
 
 ## 1. Problem Definition
@@ -90,7 +93,27 @@ We employed the following machine learning models:
 - Confusion matrices used to evaluate misclassification impact.
 - Random Forest had best balance of precision, recall, and interpretability.
 
-## Something New
+
+## 8. Insights & Recommendations
+
+### Key Findings  
+The model identified these as the most influential features:  
+- **Current Loan Amount**  
+- **Credit Score**  
+- **Annual Income**  
+- **Loan-to-Income Ratio (LTI)**  
+- **Years of Credit History**
+
+---
+
+### Recommendations  
+1. **Prioritize high credit scores** – Strong link to repayment.  
+2. **Favour higher incomes** – Indicates better repayment capacity.  
+3. **Consider credit history length** – Longer history = more reliability.  
+4. **Be cautious with large loan amounts** – Apply stricter checks.  
+5. **Manually review high LTI cases** – High LTI = higher default risk.
+
+## 9. Something New
 
 To tackle the class imbalance problem, we explored advanced data balancing techniques:
 
@@ -101,7 +124,7 @@ Further, we implemented XGBoost, an advanced machine learning model known for it
 
 ---
 
-## 8. Individual Contributions
+## 10. Individual Contributions
 
 - **Daryl:** Data preparation and cleaning, Exploratory data analysis, machine learning
 - **Wen Bin:** Data preparation and cleaning, machine learning, SMOTENC and XGBOOST research.
