@@ -66,12 +66,14 @@ We selected the **Loan Prediction Dataset** because it addresses a real-world ch
 ## 6. Data Preprocessing
 
 - **Target Encoding**: `Loan Status` mapped to binary (1 = Fully Paid, 0 = Charged Off).
-- **Feature Selection**: Focused on Credit Score, Income, Loan Amount, LTI, Term, and categorical variables like Home Ownership.
+- **Feature Selection**:
+  - Numerical - Credit Score, Income, Loan Amount, LTI,  Years of Credit History
+  - Categorical - Home Ownership and Term.
 - **Train-Test Split**: 80/20 split with stratification to preserve class ratios.
 - **Handling Class Imbalance**:
-  - Manual upsampling.
+  - Manual upsampling (Manual Upsampling results can be seen in `Upsampling Results.pdf`) 
   - **SMOTENC** for categorical-aware oversampling.
-     - Obtained better results (Manual Upsampling results can be seen in `Upsampling Results.pdf`)
+     - Obtained better results than manual upsampling
 - **Feature Scaling**:
   - `StandardScaler` for Logistic Regression.
   - `MinMaxScaler` where needed for models sensitive to scale.
@@ -99,7 +101,7 @@ Overall, Out of all the models tested, Random Forest Produce the best F1 Macro A
 ## 8. Insights & Recommendations
 
 ### Key Findings  
-The model identified these as the most influential features:  
+The model identified these as the most influential features (Most-least important):  
 - **Current Loan Amount**  
 - **Credit Score**  
 - **Annual Income**  
@@ -117,13 +119,13 @@ The model identified these as the most influential features:
 
 ## 9. Something New
 
-To tackle the class imbalance problem, we explored advanced data balancing techniques:
+-**SMOTENC**: A robust data augmentation method that creates synthetic samples while properly handling both numerical and categorical features.
 
-- **SMOTENC:** A robust data augmentation method that creates synthetic data to balance the dataset.
-- **XGBoost:** An advanced machine learning model known for its robustness and high performance.
+-**SMOTE**: Initially considered, but found to be unsuitable as it cannot handle categorical variables, which led to poor model performance and misleading samples.
 
-We also explored using **SMOTE**, but found it unsuitable for our dataset due to its inability to handle categorical features effectively.
+-**XGBoost**: An advanced machine learning algorithm known for its strong performance and ability to handle imbalanced data when paired with proper resampling.
 
+-**GridSearch and Cross-Validation**: Even with different cross-validation settings, the best hyperparameters selected by GridSearchCV can remain unchanged — suggesting that some parameter combinations are consistently strong across folds.
 
 ---
 
