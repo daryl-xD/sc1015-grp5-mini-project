@@ -118,8 +118,9 @@ The model identified these as the most influential features:
 To tackle the class imbalance problem, we explored advanced data balancing techniques:
 
 - **SMOTENC:** A robust data augmentation method that creates synthetic data to balance the dataset.
+- **XGBoost:** An advanced machine learning model known for its robustness and high performance.
 
-Further, we implemented XGBoost, an advanced machine learning model known for its robustness and high performance.
+We also explored using **SMOTE**, but found it unsuitable for our dataset due to its inability to handle categorical features effectively.
 
 
 ---
