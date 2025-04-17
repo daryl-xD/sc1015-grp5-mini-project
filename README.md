@@ -71,6 +71,7 @@ We selected the **Loan Prediction Dataset** because it addresses a real-world ch
 - **Handling Class Imbalance**:
   - Manual upsampling.
   - **SMOTENC** for categorical-aware oversampling.
+     - Obtained better results (Manual Upsampling results can be seen in `Upsampling Results.pdf`)
 - **Feature Scaling**:
   - `StandardScaler` for Logistic Regression.
   - `MinMaxScaler` where needed for models sensitive to scale.
