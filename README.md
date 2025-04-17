@@ -103,5 +103,5 @@ Further, we implemented XGBoost, an advanced machine learning model known for it
 
 ## 8. Individual Contributions
 
-- **Member 1:** Data preparation and cleaning, Exploratory data analysis, machine learning
-- **Member 2:** Data preparation and cleaning, machine learning, SMOTENC and XGBOOST research.
+- **Daryl:** Data preparation and cleaning, Exploratory data analysis, machine learning
+- **Wen Bin:** Data preparation and cleaning, machine learning, SMOTENC and XGBOOST research.
