@@ -1,5 +1,5 @@
 # Group 5 Mini Project
-## Daryl (U2323795D), Hong Wen Bin (U2323406L)
+## Daryl Martin Ong Shaw Wee (U2323795D), Hong Wen Bin (U2323406L)
 
 # Loan Default Prediction
 
